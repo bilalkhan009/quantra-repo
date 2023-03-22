@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/w-3.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>client Page</title>
+</head>
+<body>
+    <nav class="navbar w3-card-2 w3-white w3-opacity-min" style="position: static;">
+        <div class="logo">
+            <img src="../../assets/Quantralogo.png" alt="navbar-logo">
+        </div>
+        <ul class="nav-items w3-mobile w3-s6">
+            <li><a class="country w3-hide-small" href="#"></a></li>
+            <li class="badge"><a class="bell w3-hide-small" href="#"></a><span>9</span></li>
+            <div class="user-box w3-border-left setting-icons">
+            <li><a class="user-name" href="#">Genesh</a></li>
+            <li><a class="user-demo" href="#"></a></li>
+            </div>
+        </ul>
+        <a href="javascript:void(0)" class="manu-btn w3-button w3-right" onclick="myFunction()">&#9776;</a>
+        <ul id="demo" class="w3-hide w3-hide-medium w3-hide-large w3-bar-block" style="z-index: 5;">
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Users</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Notification</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Your Country</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-box w3-clear" style="width: 100%; margin: 30px auto; padding: 0%;">
+        <div class="back-btn">
+            <div class="btn" style="margin-top: 20%;">
+            <a href="./../admin/under-system-admin.html" style="width: 100%; display:block;"></a>
+            </div>
+        </div>
+        <div class="client-header w3-left-align" style="width: 70%;">
+            <h3 class="w3-xlarge w3-text-gray">Client details</h3>
+        </div>
+        </div>
+
+        <div class="container">
+        <div class="client-details">
+        <div class="client-box w3-white w3-card-2">
+            <form action="#">
+
+            <div class="client-btn w3-border-bottom">
+                <div class="rule-btn"><button class="r-btn">view projects</button></div>
+            </div>
+            <div class="logo-content w3-display-container">
+                <div class="quantra-txt">
+                <img src="./../../assets/quantra.png" alt="quantra-text">
+                </div>
+                <span class="edit-box"></span>
+                <span class="remove-box"></span>
+            </div>
+
+            <div class="input-boxes">
+                <div class="mail-box">
+                    <input type="text" id="c-name" placeholder="Type Your Name">
+                    <label for="c-name">client name</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="text" id="contact-d" placeholder="Your contact No">
+                    <label for="contact-d">contact details</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="email" id="c-email" placeholder="forexample@gmail.com">
+                    <label for="c-email">email</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="text" id="poc-N" placeholder="Dan john">
+                    <label for="poc-N">client POC name</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="text" id="poc-E" placeholder="Danjohn.@gmail.com">
+                    <label for="poc-E">client POC email</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="text" id="client-C" placeholder="Type your city">
+                    <label for="client-C">client city</label>
+                </div>
+
+                <div class="mail-box">
+                    <input type="text" id="client-cont" placeholder="Type your country">
+                    <label for="client-cont">client country</label>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="client-box user-list-box w3-white w3-card-2">
+            <div class="sear6-box w3-border-bottom">
+                <div class="gray-blue-btn" style="width: 85%;">
+                    <button onclick="document.getElementById('id01').style.display='block'"
+                        class="w3-button w3-teal w3-hover-teal" style="width: 100%;">Uploade CSV/Excel
+                        File</button>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-display-container w3-center"
+                            style="max-width: 500px; height: 380px;">
+                            <h3 class="w3-text-black w3-xlarge w3-padding-large"
+                                style="font-weight: bolder;">Uploade User's File</h3>
+                            <div class="border-dash"
+                                style="width: 80%; margin: 10px auto; height: 250px; border: 2px dashed lightgrey;">
+                                <div class="uploade-icon" style="width: 80px; margin: 30px auto 5px auto">
+                                    <img class="w3-image" src="../../assets/upload_icon_.svg" alt=""
+                                        style="width: 100%;">
+                                </div>
+                                <h3>Drop File Here</h3>
+                                <p class="w3-text-grey">Supported formate OSV,XLS <span
+                                        class="w3-block w3-text-black">OR</span> <strong
+                                        class="w3-text-teal w3-xlarge">Browser Files</strong></p>
+                            </div>
+                            <div class="w3-row w3-clear w3-col l12">
+                                <div class="uploade-btn w3-col l5 m5 s6" style="margin-left: 35px;">
+                                    <input class="w3-block w3-teal w3-card-2" type="file" name=""
+                                        id="uplode">
+                                </div>
+                                <div class="cencle-btn w3-col l4 m4 s6 w3-text-white w3-gray w3-round-xxlarge"
+                                    style="margin-left: 40px; height: 45px;">
+                                    <button onclick="document.getElementById('id01').style.display='none'"
+                                        class=" w3-button w3-show-inline-block w3-round-xxlarge"
+                                        style="width: 100%; height: 45px;">Cencle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="u-list">
+                <div class="user-name-container">
+                    <div class="user-name w3-border-bottom w3-border-right">
+                    <label for="name">Name</label>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container">
+                        <input class="w3-input w3-border-0" type="text" id="name" placeholder="Add Name">
+                        <span class="add-user w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container" style="padding: 2em 0em;">
+                    </div>
+                    <div class="user-name w3-border-bottom w3-border-right w3-display-container" style="padding: 2em 0em;">
+                    </div>
+                    
+                </div>
+
+                
+                <div class="user-email-container">
+                    <div class="user-email w3-border-bottom">
+                    <label for="email">Email</label>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container">
+                        <input class="w3-input w3-border-0" type="email" id="email" placeholder="Add Email">
+                        <span class="add-user w3-padding-large"></span>
+                        <span class="cencel-u w3-padding-large"></span>
+                        <span class="show-u w3-padding-large"></span>
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container" style="padding: 2em 1em;">
+                        
+                    </div>
+                    <div class="user-name w3-border-bottom w3-display-container" style="padding: 2em 1em;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
