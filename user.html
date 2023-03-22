@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/w-3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>User</title>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar w3-card-4 w3-white w3-opacity-min" style="position: static;">
+        <div class="logo">
+            <img src="../../assets/Quantralogo.png" alt="navbar-logo">
+        </div>
+        <ul class="nav-items w3-mobile w3-s6">
+            <li class="hide-small"><a class="country" href="#"></a></li>
+            <li class="badge"><a class="bell" href="#"></a><span>9</span></li>
+            <div class="setting-icons w3-border-left">
+                <li><a class="user-name" href="#">Genesh</a></li>
+                <li><a class="user-demo" href="#"></a></li>
+            </div>
+        </ul>
+
+        <a href="javascript:void(0)" class="manu-btn w3-button w3-right" onclick="myFunction()">&#9776;</a>
+        <ul id="demo" class="w3-hide w3-hide-medium w3-hide-large w3-bar-block w3-animate-top" style="z-index: 5;">
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Users</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Notification</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Your Country</a></li>
+        </ul>
+    </nav>
+        <div class="content-box  w3-clear" style="width: 100%; margin: 30px auto;">
+        <div class="back-btn">
+            <div class="btn sm-margin" style="margin-top: 20%;">
+            <a href="./../admin/under-system-admin.html" style="width: 100%; display:block;"></a>
+            </div>
+        </div>
+        <div class="client-header">
+            <h3 class="w3-xlarge w3-text-gray">User</h3>
+        </div>
+        </div>
+        
+        <div class="w3-card-2 w3-clear user-info" style="width: 85%; margin: 50px auto 20px auto;">
+            <div class="user-box w3-row w3-border w3-padding-large w3-col l12 m12 w3-white w3-border" style="height: 340px;">
+                <form action="#">
+                    <div class="input-box w3-col l3 m3 w3-margin-top">
+                        <label for="user-e">User Email</label>
+                        <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                   </div>
+                    <div class="input-box w3-col l3 m3 w3-margin-top">
+                        <label for="u-name">User Name</label>
+                        <input class="w3-input w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                   </div>
+                    <div class="input-box w3-col l3 m3 w3-margin-top">
+                        <label for="user-t">User Type</label>
+                        <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                            <option value="">select your type</option>
+                            <option value="admin">admin</option>
+                            <option value="super-admin">super admin</option>
+                            <option  value="">Regular User</option>
+                            <option value="private">Private User</option>
+                            <option value="New">New User</option>
+                            <option value="Recent">Recent User</option>
+                        </select>
+                   </div>
+                    <div class="input-box user-id-box w3-col l3 m3 w3-display-container w3-margin-top">
+                        <label for="user-id">User ID</label>
+                        <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                        <div class="hide w3-col l2 m2 w3-display-right w3-margin-right" style="margin-top: 13px;">
+                            <a href="#"></a>
+                        </div>
+                   </div>
+                   <div class="w3-row w3-col l12 m12" style="margin: 45px 0px; padding-bottom: 10px;">
+                    <h3>Activate/Deactivate User from Projects</h3>
+                    <div class="check-boxes">
+                    <div class="check-box w3-col l3 m3">
+                        <input class="w3-checkbox" type="checkbox" name="" id="mortage">
+                        <label class="w3-text-gray" for="mortage">Mortage</label>
+                    </div>
+                    <div class="check-box w3-col l3 m3">
+                        <input class="w3-checkbox" type="checkbox" name="" id="bank">
+                        <label class="w3-text-gray" for="bank">Bank Reconsiliation</label>
+                    </div>
+                    <div class="check-box w3-col l3 m3">
+                        <input class="w3-checkbox" type="checkbox" name="" id="journal">
+                        <label class="w3-text-gray" for="journal">Journal Entry</label>
+                    </div>
+                    <div class="check-box w3-col l3 m3">
+                        <input class="w3-checkbox" type="checkbox" name="" id="lease" checked="chaked">
+                        <label class="w3-text-gray" for="lease">Lease Expiry</label>
+                    </div>
+                    </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+</html>
