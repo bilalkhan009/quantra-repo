@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="cancel_icon.svg" class="cls-1" d="M461,264.865l3.856-3.852L461,257.151l1.126-1.127,3.846,3.847L469.835,256l1.129,1.127-3.849,3.849L471,264.854,469.853,266l-3.862-3.863L462.128,266Z" transform="translate(-461 -256)"/>
+</svg>
