@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/w-3.css">
+    <link rel="stylesheet" href="./../../css/style.css">
+    <title>Rules Page</title>
+</head>
+<body class="w3-light-grey">
+    <nav class="navbar w3-card-2 w3-white w3-opacity-min" style="position: static;">
+        <div class="logo">
+            <img src="../../../assets/Quantralogo.png" alt="navbar-logo">
+        </div>
+        <ul class="nav-items w3-mobile w3-s6">
+            <li><a class="country w3-hide-small" href="#"></a></li>
+            <li class="badge"><a class="bell w3-hide-small" href="#"></a><span>9</span></li>
+            <div class="user-box setting-icons w3-border-left">
+            <li><a class="user-name" href="#">Genesh</a></li>
+            <li><a class="user-demo" href="#"></a></li>
+            </div>
+        </ul>
+        <a href="javascript:void(0)" class="manu-btn w3-button w3-right" onclick="myFunction()">&#9776;</a>
+        <ul id="demo" class="w3-hide w3-hide-medium w3-hide-large w3-bar-block" style="z-index: 5;">
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Users</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Notification</a></li>
+            <li class="w3-bar-item w3-button w3-large"><a href="#">Your Country</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-box  w3-clear" style="width: 100%; margin: 30px auto;">
+        <div class="back-btn">
+            <div class="btn sm-margin" style="margin-top: 5%;">
+            <a href="./../security/security.html" style="width: 100%; display:block;"></a>
+            </div>
+        </div>
+        <div class="client-header">
+            <h3 class="w3-xlarge w3-text-gray" style="margin: 0%;" >Rules</h3>
+        </div>
+        </div>
+        
+        <div class="container visibility-container w3-card-2">
+            <div class="white-bg w3-white w3-card-2">
+                <div class="v-heading"><h3>page visibility</h3></div>
+            <div class="btn-boxes w3-border-top w3-border-bottom w3-padding-small">
+                <div class="rule-btn w3-display-container">
+                    <button class="r-btn w3-button">system admin user</button>
+                    <span class="del-icon" onclick="document.getElementById('id01').style.display='block'">&times;</span>
+                </div>
+                <div class="rule-btn w3-display-container">
+                    <button class="r-btn w3-button">admin user</button>
+                    <span class="del-icon" onclick="document.getElementById('id01').style.display='block'">&times;</span>
+                </div>
+                <div class="rule-btn w3-display-container">
+                    <button class="r-btn w3-button">regular user</button>
+                    <span class="del-icon" onclick="document.getElementById('id01').style.display='block'">&times;</span>
+                </div>
+
+                    <div class="w3-modal w3-padding" id="id01">
+                        <div class="w3-modal-content w3-center w3-padding-large w3-white w3-display-container" style="max-width: 400px; margin: 15rem auto;">
+                            <span class="w3-button w3-large w3-right" onclick="document.getElementById('id01').style.display='none'">X</span>
+                            <h2 style="padding: 0.5em 0em; text-transform: capitalize;">remove role</h2>
+                            <p class="w3-medium w3-opacity">Are you sure you want to remove <span> < role name >?</p>
+                            <div class="btn-container w3-margin-top w3-padding-small">
+                                <button class="w3-padding w3-button" style="color: white;">remove role</button>
+                                <button class="w3-padding w3-text-white w3-button" onclick="document.getElementById('id01').style.display='none'" style="background-color: #cccccc;">cencel</button>
+                            </div>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="check-boxes">
+                <div class="check"><input type="checkbox" id="flow"> <label for="flow">flow</label></div>
+                <div class="check"><input type="checkbox" id="report"> <label for="report">report</label></div>
+                <div class="check D-padding"><input type="checkbox" id="admin"> <label for="admin">stytem admin</label></div>
+                <div class="check"><input type="checkbox" id="client"> <label for="client">client</label></div>
+                <div class="check"><input type="checkbox" id="secure"> <label for="secure">security</label></div>
+                <div class="check"><input type="checkbox" id="project"> <label for="project">project</label></div>
+                <div class="check M-y"><input type="checkbox" id="app"> <label for="app">app</label></div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="container w3-card-2">
+            <div class="white-bg w3-white w3-card-2" style="margin: 3rem 0rem; padding: 1em 0em; height: fit-content;">
+
+                <div class="F-control">
+                    <h3>feature control</h3>
+                   <div class="rule-btn w3-margin-left"><button class="rule-button">add new roll</button></div>
+                </div>
+
+                <div class="F-control w3-border-top w3-border-bottom" style="padding: 0.8em 1em; max-width: 100%;">
+                    <div class="rule-btn w3-display-container">
+                        <button class="r-btn w3-button">project manager</button>
+                        <span class="del-icon" onclick="document.getElementById('id01').style.display='block'">&times;</span>
+                    </div>
+                    <div class="rule-btn w3-button w3-display-container" style="width: auto; padding: 0em 2em;">
+                        <button class="r-btn">project manager Quantra user</button>
+                        <span class="del-icon" onclick="document.getElementById('id01').style.display='block'">&times;</span>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                <div class="row-box">
+                    <h4>object</h4>
+                    <div class="check-boxes">
+                        <div class="check"><input type="checkbox" id="edit-d"> <label for="edit-d">edit description</label></div>
+                        <div class="check"><input type="checkbox" id="mody"> <label for="mody">modify/add attachement</label></div>
+                        <div class="check"><input type="checkbox" id="mody-g"> <label for="mody-g">modify grid rows</label></div>
+                    </div>
+                </div>
+
+                <div class="row-box">
+                    <h4>reports</h4>
+                    <div class="check-boxes">
+                        <div class="check"><input type="checkbox" id="export-r"> <label for="export-r">export report as pdf/csv</label></div>
+                    </div>
+                </div>
+
+                <div class="row-box project-row">
+                    <h4>projects</h4>
+                    <div class="check-boxes">
+                        <div class="check"><input type="checkbox" id="object"> <label for="object">Objects</label></div>
+                        <div class="check"><input type="checkbox" id="v-project"> <label for="v-project">view project list</label></div>
+                        <div class="check"><input type="checkbox" id="add-e"> <label for="add-e">add/edit project</label></div>
+                        <div class="check"><input type="checkbox" id="new-m"> <label for="new-m">new/modify grid</label></div>
+                    </div>
+                </div>
+
+                <div class="row-box project-row">
+                    <h4>client</h4>
+                    <div class="check-boxes">
+                        <div class="check"><input type="checkbox" id="add-c"> <label for="add-c">add new client</label></div>
+                        <div class="check"><input type="checkbox" id="mody-c"> <label for="mody-c">modify client info</label></div>
+                        <div class="check"><input type="checkbox" id="client-l"> <label for="client-l">client list</label></div>
+                        <div class="check"><input type="checkbox" id="adding-u"> <label for="adding-u">adding users</label></div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div> 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+</html>
