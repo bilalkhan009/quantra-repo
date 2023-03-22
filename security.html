@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>under-sec-system</title>
+    <link rel="stylesheet" href="./../../css/w-3.css">
+    <link rel="stylesheet" href="./../../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar w3-card-4 w3-white w3-opacity-min" style="position: static;">
+            <div class="logo">
+                <img src="./../../../assets/Quantralogo.png" alt="navbar-logo">
+            </div>
+            <ul class="nav-items w3-mobile w3-s6">
+                <li class="hide-small"><a class="country" href="#"></a></li>
+                <li class="badge"><a class="bell" href="#"></a><span>9</span></li>
+                <div class="user-box w3-border-left">
+                    <li><a class="user-name" href="#">Genesh</a></li>
+                    <li><a class="user-demo" href="#"></a></li>
+                </div>
+            </ul>
+
+            <a href="javascript:void(0)" class="manu-btn w3-button w3-right" onclick="myFunction()">&#9776;</a>
+            <ul id="demo" class="w3-hide w3-hide-medium w3-hide-large w3-bar-block w3-animate-top" style="z-index: 5;">
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Users</a></li>
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Notification</a></li>
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Your Country</a></li>
+            </ul>
+        </nav>
+        <div class="back-btn-box"><a class="back-icon" href="./../under-system-admin.html"></a></div>
+        <div class="container-icon-box" style="max-width: 1400px; width: 90%; margin: auto;">
+            <div class="size1" style="width: 75%;">
+                <div class="size w3-clear" style="width: 100%; margin: auto;">
+                    <!-- <h2 class="w3-opacity">System Admin</h2> -->
+                    <div class="icon-boxes w3-row w3-mobile w3-clear">
+                        <div class="box project-box w3-col w3-mobile w3-center w3-card-4 w3-white" style="width: 30%; margin-left: 3rem;">
+                                <a class="w3-block" href="./users.html"><img class="w3-image w3-block"
+                                        src="./../../../assets/user_select_icon.svg" alt="project_icon" style="width: 65%;"></a>
+                                <p class="w3-large w3-text-black">user</p>
+                            </div>
+                        <div class="box project-box w3-col  w3-mobile w3-center w3-card-4 w3-white" style="width: 30%; margin-left: 3rem;">
+                                <a class="w3-block" href="./../security/rules.html"><img class="w3-image w3-block"
+                                        src="./../../../assets/project_icon.svg" alt="security_icon"
+                                        style="width: 65%;"></a>
+                                <p class="w3-text-black w3-large">rules</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+
+        function w3_open() {
+       document.getElementById("mySidebar").style.display = "block";
+}
+</script>
+
+</body>
+</html>
