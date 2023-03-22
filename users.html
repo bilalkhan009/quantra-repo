@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/w-3.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Users</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar w3-card-4 w3-white w3-opacity-min" style="position: static;">
+            <div class="logo">
+                <img src="../../../assets/Quantralogo.png" alt="navbar-logo">
+            </div>
+            <ul class="nav-items w3-mobile w3-s6">
+                <li class="hide-small"><a class="country" href="#"></a></li>
+                <li class="badge"><a class="bell" href="#"></a><span>9</span></li>
+                <div class="setting-icons w3-border-left">
+                    <li><a class="user-name" href="#">Genesh</a></li>
+                    <li><a class="user-demo" href="#"></a></li>
+                </div>
+            </ul>
+    
+            <a href="javascript:void(0)" class="manu-btn w3-button w3-right" onclick="myFunction()">&#9776;</a>
+            <ul id="demo" class="w3-hide w3-hide-medium w3-hide-large w3-bar-block w3-animate-top" style="z-index: 5;">
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Users</a></li>
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Notification</a></li>
+                <li class="w3-bar-item w3-button w3-large"><a href="#">Your Country</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-box  w3-clear" style="width: 100%; margin: 30px auto; padding: 0em">
+            <div class="back-btn">
+                <div class="btn" style="margin-top: 20%;">
+                <a href="./../security/security.html" style="width: 100%; display:block;"></a>
+                </div>
+            </div>
+            <div class="client-header">
+                <h3 class="w3-xlarge w3-text-gray">User</h3>
+            </div>
+            </div>
+            <div class="w3-clear"></div>
+            <div class="users-box w3-white w3-card-4 full-hight" style="width: 80%; height: 500px; margin: 15px auto 20px auto; padding: 15px 0px; ">
+                <div class="user-items w3-row-padding w3-padding w3-border-bottom" style="width: 100%;">
+                    <form action="#">
+                        <div class="w3-col l3 m3 s6 sear6-box">
+                            <div class="gray-blue-btn w3-col" style="width: 85%;">
+                                <button onclick="document.getElementById('id01').style.display='block'"
+                                    class="w3-button w3-teal w3-hover-teal" style="width: 100%;">Uploade CSV/Excel
+                                    File</button>
+                                <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content w3-display-container w3-center"
+                                        style="max-width: 500px; height: 380px;">
+                                        <h3 class="w3-text-black w3-xlarge w3-padding-large"
+                                            style="font-weight: bolder;">Uploade User's File</h3>
+                                        <div class="border-dash"
+                                            style="width: 80%; margin: 10px auto; height: 250px; border: 2px dashed lightgrey;">
+                                            <div class="uploade-icon" style="width: 80px; margin: 30px auto 5px auto">
+                                                <img class="w3-image" src="../../assets/upload_icon_.svg" alt=""
+                                                    style="width: 100%;">
+                                            </div>
+                                            <h3>Drop File Here</h3>
+                                            <p class="w3-text-grey">Supported formate OSV,XLS <span
+                                                    class="w3-block w3-text-black">OR</span> <strong
+                                                    class="w3-text-teal w3-xlarge">Browser Files</strong></p>
+                                        </div>
+                                        <div class="w3-row w3-clear w3-col l12">
+                                            <div class="uploade-btn w3-col l5 m5 s6" style="margin-left: 35px;">
+                                                <!-- <button onclick="document.getElementById('id01').style.display='none'" class="w3-teal w3-btn">Uploade</button> -->
+                                                <input class="w3-block w3-teal w3-card-2" type="file" name=""
+                                                    id="uplode">
+                                            </div>
+                                            <div class="cencle-btn w3-col l4 m4 s6 w3-text-white w3-gray w3-round-xxlarge"
+                                                style="margin-left: 40px; height: 45px;">
+                                                <button onclick="document.getElementById('id01').style.display='none'"
+                                                    class=" w3-button w3-show-inline-block w3-round-xxlarge"
+                                                    style="width: 100%; height: 45px;">cencle</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col l4 m4 s4 w3-hide-small sear6-box">
+                            <div class="input-box w3-col" style="width: 90%;">
+                                <input class="w3-input w3-light-gray" type="text" placeholder="Enter Your Email Id" style="background: none; width: 100%;">
+                            </div>
+                        </div>
+                        <div class="w3-col l5 m5 s6 w3-container sear6-box" style="padding-left: 7%;">
+                            <div class="search-box w3-border" style="width: 100%;">
+                                <input class="search-icon w3-input w3-border w3-white" type="text" style="width: 100%;" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="w3-row-padding hide-small w3-border-bottom w3-padding">
+                            <div class="email-box w3-col l3 m3" style="margin: 0%; padding-top: 15px;">
+                                <label class="w3-large w3-opacity" for="email">User's Email</label>
+                            </div>
+                            <div class="uers-name-box w3-col l3 m3" style="padding-top: 15px;">
+                                <label class="w3-large w3-opacity" for="u-name">User Name</label>
+                            </div>
+                            <div class="users-type-box w3-col l3 m3" style="padding-top: 15px;">
+                                <label class="w3-large w3-opacity" for="u-type">User Type</label>
+                            </div>
+                            <div class="uers-id-box w3-col l3 m3" style="padding-top: 15px;">
+                                <label class="w3-large w3-opacity" for="u-id">User ID</label>
+                            </div>
+                        </div>
+                        <div class="w3-clear w3-row-padding w3-border-bottom w3-padding">
+                            <div class="input-box email-type w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                           </div>
+                            <div class="input-box name-box w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                           </div>
+                            <div class="input-box users-type w3-col l3 m3 w3-margin-top">
+                                <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                                    <option  value="">select type</option>
+                                    <option  value="admin">admin</option>
+                                    <option  value="super-admin">super admin</option>
+                                    <option  value="">Regular User</option>
+                                    <option value="private">Private User</option>
+                                    <option value="New">New User</option>
+                                    <option value="Recent">Recent User</option>
+                                </select>
+                           </div>
+                            <div class="input-box user-input-box w3-col l3 m3 w3-display-container w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                                <div class="hide w3-col l2 m2 s2 w3-display-right w3-margin-right">
+                                    <a href="#"></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="w3-clear w3-row-padding w3-border-bottom w3-padding">
+                            <div class="input-box email-type w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                           </div>
+                            <div class="input-box name-box w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input name-box w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                           </div>
+                            <div class="input-box users-type w3-col l3 m3 w3-margin-top">
+                                <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                                    <option  value="">select type</option>
+                                    <option  value="admin">admin</option>
+                                    <option  value="super-admin">super admin</option>
+                                    <option  value="">Regular User</option>
+                                    <option value="private">Private User</option>
+                                    <option value="New">New User</option>
+                                    <option value="Recent">Recent User</option>
+                                </select>
+                           </div>
+                            <div class="input-box user-input-box w3-col l3 m3 w3-display-container w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                                <div class="hide w3-col l2 m2 s2 w3-display-right w3-margin-right">
+                                    <a href="#"></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="border-bottom w3-clear w3-row-padding w3-border-bottom w3-padding">
+                            <div class="input-box email-type w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                           </div>
+                            <div class="input-box name-box w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                           </div>
+                            <div class="input-box users-type w3-col l3 m3 w3-margin-top">
+                                <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                                    <option  value="">select type</option>
+                                    <option  value="admin">admin</option>
+                                    <option  value="super-admin">super admin</option>
+                                    <option  value="">Regular User</option>
+                                    <option value="private">Private User</option>
+                                    <option value="New">New User</option>
+                                    <option value="Recent">Recent User</option>
+                                </select>
+                           </div>
+                            <div class="input-box user-input-box w3-col l3 m3 w3-display-container w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                                <div class="hide w3-col l2 m2 s2 w3-display-right w3-margin-right">
+                                    <a href="#"></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="w3-clear w3-row-padding w3-border-bottom w3-padding">
+                            <div class="input-box email-type w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                           </div>
+                            <div class="input-box name-box w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                           </div>
+                            <div class="input-box users-type w3-col l3 m3 w3-margin-top">
+                                <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                                    <option  value="">select type</option>
+                                    <option  value="admin">admin</option>
+                                    <option  value="super-admin">super admin</option>
+                                    <option  value="">Regular User</option>
+                                    <option value="private">Private User</option>
+                                    <option value="New">New User</option>
+                                    <option value="Recent">Recent User</option>
+                                </select>
+                           </div>
+                            <div class="input-box user-input-box user-input-box w3-col l3 m3 w3-display-container w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                                <div class="hide w3-col l2 m2 s2 w3-display-right w3-margin-right">
+                                    <a href="#"></a>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="w3-clear w3-row-padding w3-padding">
+                            <div class="input-box email-type w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="email"id="user-e" placeholder="bilal01@gmail.com" style="width: 100%;">
+                           </div>
+                            <div class="input-box name-box w3-col l3 m3 w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="u-name" placeholder="Bilal Khan" style="width: 100%;">
+                           </div>
+                            <div class="input-box users-type w3-col l3 m3 w3-margin-top">
+                                <select class="w3-input w3-border w3-text-gray" id="user-t" style="width: 150px;">
+                                    <option  value="">select type</option>
+                                    <option  value="admin">admin</option>
+                                    <option  value="super-admin">super admin</option>
+                                    <option  value="">Regular User</option>
+                                    <option value="private">Private User</option>
+                                    <option value="New">New User</option>
+                                    <option value="Recent">Recent User</option>
+                                </select>
+                           </div>
+                            <div class="input-box user-input-box w3-col l3 m3 w3-display-container w3-margin-top">
+                                <input class="w3-input w3-border-0" type="text" id="user-id" placeholder="TQ07346" style="width: 100%;">
+                                <div class="hide w3-col l2 m2 s2 w3-display-right w3-margin-right">
+                                    <a href="#"></a>
+                                </div>
+                           </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+    
+</body>
+</html>
