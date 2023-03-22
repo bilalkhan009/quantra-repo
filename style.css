@@ -422,14 +422,14 @@ input:focus{
 
 .nav-items .country{
     display: inline-block;
-    background: url(../../assets/Pakistan.png) no-repeat;
+    background: url(./Pakistan.png) no-repeat;
     background-position: center;
     background-size: 2.7rem;
     padding: 1em 2em;
 }
 .nav-items .bell{
     display: inline-block;
-    background: url(../../assets/bell.png) no-repeat;
+    background: url(./bell.png) no-repeat;
     background-position: center;
     background-size: 2.7rem;
     padding: 1em 2em;
@@ -471,7 +471,7 @@ input:focus{
 
 .nav-items .user-demo{
     display: inline-block;
-    background: url(../../assets/user.png) no-repeat;
+    background: url(./user.png) no-repeat;
     background-position: center;
     background-size: 3rem;
     padding: 1em 2em;
@@ -499,7 +499,7 @@ input:focus{
     height: 3.5rem;
     padding: 1em 0em;
     display: block;
-    background-image: url(./../../assets/Back_icon.png);
+    background-image: url(./Back_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -579,7 +579,7 @@ input:focus{
 }
  .btn a{
     display: inline-block;
-    background: url(../../assets/Back_icon.png) no-repeat;
+    background: url(./Back_icon.png) no-repeat;
     background-position: center;
     background-size: cover;
     padding: 15px 25px;
@@ -587,7 +587,7 @@ input:focus{
 
 .hide a{
     display: inline-block;
-    background: url(../../assets/show_icon.svg) no-repeat;
+    background: url(./show_icon.svg) no-repeat;
     background-size: 35px;
     background-position: center;
     padding: 0.9em 1.3em;
@@ -595,7 +595,7 @@ input:focus{
 
 .search-icon{
     display: inline-block;
-    background: url(../../assets/search-icon.png) no-repeat;
+    background: url(./search-icon.png) no-repeat;
     background-position: left center;
     background-size: 35px;
     padding: 7px 40px;
@@ -818,7 +818,7 @@ input:focus{
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url(./../../assets/edit_icon.png);
+    background-image: url(./edit_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -832,7 +832,7 @@ input:focus{
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url(./../../assets/cancel_icon.svg);
+    background-image: url(./cancel_icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -909,7 +909,7 @@ input:focus{
 }
 .u-list .add-user{
     display: inline-block;
-    background: url(./../../assets/add_icon.png) no-repeat;
+    background: url(./add_icon.png) no-repeat;
     background-position: right;
     background-size: 1.5rem;
     position: absolute;
@@ -921,7 +921,7 @@ input:focus{
 }
 .u-list .cencel-u{
     display: none;
-    background: url(./../../assets/cancel_icon.svg) no-repeat;
+    background: url(./assets/cancel_icon.svg) no-repeat;
     background-position: right;
     background-size: 1.5rem;
     position: absolute;
@@ -931,7 +931,7 @@ input:focus{
 
 .u-list .show-u{
     display: none;
-    background: url(./../../assets/show_icon.svg) no-repeat;
+    background: url(./show_icon.svg) no-repeat;
     background-position: right;
     background-size: 2.5rem;
     position: absolute;
