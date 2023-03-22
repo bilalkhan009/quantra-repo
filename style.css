@@ -1,0 +1,1682 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none
+}
+html{
+    font-size: 62.5%;
+
+    /* variables for colors */
+
+    --bg-color: white;
+    --btn-bg: #1a95a5;
+    --txt-gray: #666666;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+
+
+
+
+/* ####### login-box styling ########## */
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.container-box .item-box{
+    width: 445px;
+    height: 471px;
+    margin-top: 5rem;
+    background-color: white;
+}
+
+.item-box .logo-box{
+    width: 15%;
+    height: fit-content;
+    margin: 2rem auto;
+}
+.logo-box img{
+    display: block;
+    width: 100%;
+}
+.item-box p{
+    text-transform: capitalize;
+    text-align: center;
+    color: grey;
+    font-size: 2rem;
+}
+.item-box p span{
+    color: #2196F3;
+}
+
+.input-boxes{
+    width: 85%;
+    margin: 1rem auto;
+}
+
+ .mail-box{
+    position: relative;
+    width: 100%;
+    margin: 1.5rem auto;
+}
+.mail-box label{
+    position: absolute;
+    top: 0%;
+    left: 1%!important;
+    width: 100%;
+}
+ .mail-box input{
+    display: block;
+    padding: 2em 0.3em 0em 0.3em;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid gray;
+}
+
+input:focus ~ label{
+    color: #1a95a5;
+}
+input:focus{
+    border-bottom: 2px solid #1a95a5;
+}
+.btn-box{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.btn-box .left{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+/* ######## input type check-box styling ############  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.btn-box .right{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.right p{
+    text-align: right!important;
+    font-size: 1.5rem!important;
+    font-weight: bold;
+    color: #2196F3;
+}
+.right a:hover{
+    color: #666666;
+}
+
+.item-box .login-btn{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.login-btn input{
+    display: inline-block;
+    color: white;
+    background-color: #2196F3;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    padding: 0.5em 0em;
+    cursor: pointer;
+    border: none;
+}
+
+/* #######  no-longer-box styling ######## */
+.no-longer-container{
+    margin: 5rem auto 0rem auto;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+}
+.no-longr-box{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+.no-longr-box img{
+    display: block;
+    width: 169px;
+    height: 169px;
+    margin: auto;
+}
+
+.no-longer-container h3{
+    font-weight: bold;
+}
+.no-longer-container p{
+    color: #666666;
+}
+
+
+
+
+/* ######## utility classes ######### */
+.container{
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+}
+
+.bg-btn{
+    background-color: var(--btn-bg);
+}
+
+/* .email-box{
+    max-width: 400px;
+    width: 90%;
+    margin: 1em auto 0em auto;
+    padding: 1.5em 0em 0em 0em;
+}
+.email-box input{
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.5em 0em 0.3em 0.8em;
+    border-bottom: 2px solid rgba(95, 94, 94, 0.71);
+}
+.email-box label{
+    font-size: 8pt;
+}
+.email-box input:focus{
+    border-bottom: 2px solid var(--btn-bg);
+}
+.email-box input:focus ~ label{
+    color: var(--btn-bg);
+} */
+
+
+
+/* ###### styling Quantra-login-card ################# */
+
+/* .login-card{
+    max-width: 500px;
+    width: 445px;
+    height: 471px;
+    margin: 2rem auto;
+}
+.login-logo p{
+    color: var(--txt-gray);
+    font-size: 12pt;
+    padding: 1em 0em;
+}
+.login-logo p span{
+    color: var(--btn-bg);
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10em;
+} */
+/* .box-size::after{
+    content: "";
+    display: block;
+    border: 1px solid rgba(52, 51, 51, 0.637);
+    width: 100%;
+} 
+
+.box-size input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(194, 190, 190, 0.821);
+    background: none;
+}
+
+
+.box-size label{
+    font-size: 8pt;
+    color: var(--txt-gray);
+}
+
+.box-size input:focus{
+    border-bottom: 2px solid var(--btn-bg);
+}
+
+.box-size input:focus ~ label{
+    color: #1a95a5;
+} */
+
+/* .check-box{
+    margin-top: 2em;
+}
+.check-box p a{
+    color: #1a95a5;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.sign-in-btn{
+    max-width: 345px;
+    width: 85%;
+    margin: 6em auto 2em auto;
+    background-color: var(--btn-bg);
+}
+.sign-in-btn input[type="submit"]{
+    display: inline-block;
+    padding: 0.7em 0em;
+    width: 100%;
+    background: none;
+    border: none;
+} */
+
+
+
+
+/* ########### styling forgot-link view ######## */
+.container-box{
+    max-width: 1250px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.forgot-box{
+    max-width: 450px;
+    flex: 1 0 30%;
+    margin: 5em auto;
+    /* height: 250px; */
+}
+.quantra-logo{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.quantra-logo img{
+    display: block;
+    width: 5em;
+    margin: 1em auto;
+}
+
+.forgot-box .mail-box{
+    max-width: 400px;
+    width: 90%;
+}
+
+.mail-box label{
+    left: -2%;
+}
+.submit-btn{
+    max-width: 400px;
+    width: 90%;
+    margin: 1em auto 2em auto;
+    /* background-color: var(--btn-bg); */
+    padding: 0.6em 0em;
+    text-align: center;
+}
+
+/* ########### home-page styling ########## */
+.header{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5em 1.5em;
+}
+
+.navbar .logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+    display: block;
+}
+.navbar .nav-items{
+    flex: 0 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items .country{
+    display: inline-block;
+    background: url(../../assets/Pakistan.png) no-repeat;
+    background-position: center;
+    background-size: 2.7rem;
+    padding: 1em 2em;
+}
+.nav-items .bell{
+    display: inline-block;
+    background: url(../../assets/bell.png) no-repeat;
+    background-position: center;
+    background-size: 2.7rem;
+    padding: 1em 2em;
+}
+.nav-items .badge{
+    position: relative;
+}
+.badge span{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    right: 25%;
+    color: white;
+    background-color: red;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.nav-items .user-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items .user-name{
+    display: inline-block;
+    padding-left: 1em;
+}
+.nav-items .user-name:hover{
+    color: var(--btn-bg);
+}
+
+.nav-items .user-demo{
+    display: inline-block;
+    background: url(../../assets/user.png) no-repeat;
+    background-position: center;
+    background-size: 3rem;
+    padding: 1em 2em;
+}
+
+.manu-btn{
+    display: none;
+}
+
+.override{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.back-btn-box{
+    position: absolute; 
+    top: 13%; 
+    left: 0%; 
+    width: 4rem; 
+    height: fit-content; 
+}
+.back-btn-box .back-icon{
+    width: 120%;
+    height: 3.5rem;
+    padding: 1em 0em;
+    display: block;
+    background-image: url(./../../assets/Back_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-box{
+    max-width: 1450px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 4em auto 0em auto;
+    /* border: 1px solid black; */
+}
+
+.size1{
+    width: 100%!important;
+    margin-top: 10rem;
+}
+.size1 .icon-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem auto;
+}
+ .box{
+    width: 271px!important;
+    height: fit-content!important;
+}
+
+.box img{
+    width: 169px;
+    margin: 1em auto;
+}
+ .box p{
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.5em 0em;
+    color: rgba(128, 128, 128, 0.738)!important;
+}
+
+.box:hover p{
+    color: #1a95a5!important;
+}
+
+/* ####### styling for user-page ########### */
+.user-info .check-boxes{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0%!important;
+}
+
+
+
+/* ############### users-page styling ############### */
+.content-box{
+    width: 60%!important;
+    display: flex;
+    margin: 3rem 0rem 0rem 0rem!important;
+}
+
+.content-box .btn{
+    width: 20%!important;
+    height: 49px;
+}
+.content-box .client-header{
+    width: 30%!important;
+    margin: 0rem;
+    text-align: left!important;
+}
+
+#user-t option{
+    text-transform: capitalize;
+}
+ .btn a{
+    display: inline-block;
+    background: url(../../assets/Back_icon.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 25px;
+}
+
+.hide a{
+    display: inline-block;
+    background: url(../../assets/show_icon.svg) no-repeat;
+    background-size: 35px;
+    background-position: center;
+    padding: 0.9em 1.3em;
+}
+
+.search-icon{
+    display: inline-block;
+    background: url(../../assets/search-icon.png) no-repeat;
+    background-position: left center;
+    background-size: 35px;
+    padding: 7px 40px;
+}
+
+/* ###### popup box ######## */
+#uplode{
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+}
+::-webkit-file-upload-button{
+    border: none;
+    padding: 10px 0px;
+    border-radius: 30px;
+    width: 80px;
+    color: black;
+    background-color: white;
+    margin-right: 12px;
+}
+
+.side-manu{
+    display: none;
+}
+
+
+
+/* ####### styling for security-rules ############ */
+.white-bg{
+    height: 270px;
+}
+.v-heading h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    padding: 0.7em 0em 0em 0.7em;
+}
+
+.back-btn{
+    width: 70px!important;
+    height: fit-content;
+}
+
+.btn-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rule-btn{
+    width: 198px;
+    height: 43px;
+    background-color: #1a95a5;
+    color: white;
+    margin: 1rem;
+}
+.rule-btn .r-btn{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.rule-btn .del-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.481);
+}
+
+.btn-container button{
+    background-color: #1a95a5;
+    width: 157px;
+    height: 43px;
+    text-transform: capitalize;
+}
+
+.check-boxes{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    /* border: 1px solid red; */
+}
+.check-boxes .check{
+    width: 170px;
+    height: 4rem;
+    padding: 0em 3em;
+    text-align: center;
+    border: 1px solid #66666698;
+}
+.check input:checked + label{
+    color: #1a95a5;
+}
+.D-padding{
+    padding: 0em!important;
+}
+.M-y{
+    margin-top: 1.5rem;
+}
+.check label,
+.check input{
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+
+.F-control{
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.5em 1.5em;
+}
+.F-control h3{
+    text-transform: capitalize;
+}
+.F-control .rule-btn .rule-button{
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+    color: white;
+    background: linear-gradient(to bottom, #2f007f, #1a95a5);
+    border: none;
+}
+.F-control .rule-btn .rule-button:hover{
+    background: #939393;
+    cursor: pointer;
+}
+
+.row-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.row-box{
+    width: 100%;
+}
+.row-box h4{
+    text-transform: capitalize;
+    margin-left: 2.5rem;
+}
+
+.row-box .check-boxes{
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0% 1em;
+}
+.row-box .check{
+    width: auto;
+    margin: 0% 1rem;
+}
+
+/* ########### styling for client-detail ############ */
+.client-details{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0rem auto 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.client-details .client-box{
+    width: 440px;
+    height: fit-content;
+    padding: 1.5em 0em;
+}
+
+.client-details .client-btn{
+    padding: 0em 1.5em;
+}
+
+.client-details .logo-content{
+    width: 365px;
+    height: 5.9rem;
+    margin: auto;
+    border-bottom: 1px solid #666666;
+}
+.logo-content::after{
+    display: block;
+    content: "Logo";
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #666666;
+    position: absolute;
+    top: 35%;
+    left: 7%;
+}
+.client-details .quantra-txt{
+    width: 12rem;
+    height: fit-content;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+.quantra-txt img{
+    display: block;
+    width: 100%;
+    height: 3rem;
+}
+
+.logo-content .edit-box{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(./../../assets/edit_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+}
+
+.logo-content .remove-box{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(./../../assets/cancel_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+.logo-content .remove-box:hover{
+    background-color: rgba(249, 63, 63, 0.388);
+}
+
+.client-box .mail-box{
+    background-color: #a6a6a629;
+    margin-top: 2rem;
+}
+
+.mail-box input{
+    padding: auto auto auto 2em!important;
+}
+.client-box label{
+    display: block;
+    font-size: 9pt;
+    color: #666666;
+    text-transform: capitalize;
+    padding: 0.5em 1em;
+}
+
+.client-details .user-list-box{
+    width: 60%;
+    padding: 1em 0em;
+}
+
+.user-list-box::before{
+    display: block;
+    content: "user list";
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 17%;
+    color: #666666;
+}
+.user-list-box .sear6-box{
+    width: 100%;
+    padding: 0.7em 1em;
+}
+.user-list-box .gray-blue-btn{
+    width: 30%!important;
+}
+
+.u-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.u-list label{
+    font-size: 1.7rem;
+    padding: 1em;
+    font-weight: bold;
+}
+.u-list .user-name-container{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.u-list .user-name{
+    width: 100%;
+}
+.u-list input{
+    padding: 1.2em 1em;
+}
+.u-list .add-user{
+    display: inline-block;
+    background: url(./../../assets/add_icon.png) no-repeat;
+    background-position: right;
+    background-size: 1.5rem;
+    position: absolute;
+    top: 25%;
+    right: 7%;
+}
+.u-list input:focus ~ .add-user{
+    display: none;
+}
+.u-list .cencel-u{
+    display: none;
+    background: url(./../../assets/cancel_icon.svg) no-repeat;
+    background-position: right;
+    background-size: 1.5rem;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+}
+
+.u-list .show-u{
+    display: none;
+    background: url(./../../assets/show_icon.svg) no-repeat;
+    background-position: right;
+    background-size: 2.5rem;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+.u-list input:focus ~ .cencel-u,
+.u-list input:focus ~ .show-u{
+    display: inline-block;
+}
+.u-list ::placeholder{
+    font-weight: bold;
+}
+.u-list .user-email-container{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+/* ########### styling for different devices ############# */
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 50%;
+    }
+    .hide-small{
+        display: none;
+    }
+    .setting-icons{
+        display: none!important;
+    }
+
+    .badge{
+        display: none;
+    }
+    .manu-btn{
+        display: block;
+    }
+    .section-box{
+        /* border: 1px solid green; */
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .box{
+        width: 80%!important;
+        height: fit-content!important;
+        margin: 2rem auto!important;
+    }
+    .box img{
+        width: 50%!important;
+    }
+
+
+
+
+    /* ######## under-system-admin ########### */
+    .container-icon-box{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+    .container-icon-box .size1{
+        width: 100%!important;
+        height: fit-content;
+        margin: auto!important;
+    }
+    .icon-boxes{
+        flex-direction: column!important;
+    }
+    .icon-boxes .box{
+        width: 70%!important;
+        display: block!important;
+        margin: 2rem auto!important;
+        float: none!important;
+        padding: 1em 0em;
+    }
+    .size1 h2{
+        font-size: 2.9rem;
+        margin-left: 2rem;
+    }
+    
+
+    /* ###### user-content ######### */
+    .content-box{
+        display: flex;
+        margin: 3rem 0rem 0rem 0rem!important;
+        width: 100%!important;
+        padding: 0%;
+    }
+
+    .content-box .client-header{
+        float: none!important;
+        width: 50%!important;
+        margin: 0%;
+        text-align: left!important;
+    }
+
+    .user-info{
+        width: 100%!important;
+        height: fit-content!important;
+        padding: 0em;
+    }
+    .user-info h3{
+        font-size: 2.5rem;
+    }
+
+    .user-input-box .hide{
+        margin: 0.4rem 0rem!important;
+    }
+    .user-id-box .hide{
+        width: 20%;
+        text-align: center;
+        margin: 1.8rem 0rem 0rem 0rem!important;
+    }
+
+    .user-info .check-boxes{
+        width: 100%!important;
+        margin: 0%!important;
+    }
+    .check-boxes .w3-col{
+        float: none!important;
+    }
+    .check-boxes .check-box{
+        margin-top: 1rem!important;
+    }
+
+
+
+    /* ######## no longer styling ########## */
+    .no-longer-container{
+        margin: 5rem auto 0rem auto;
+        width: 90%;
+        height: fit-content;
+    }
+    .no-longr-box{
+        width: 100%;
+        height: fit-content;
+        margin: 2rem auto;
+    }
+    .no-longr-box img{
+        width: 169px;
+        height: 169px;
+    }
+
+    /* ######## users-styling ############ */
+    .full-hight{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+    .full-hight .sear6-box{
+        width: 45%!important;
+        margin: 1rem;
+        padding: 0%!important;
+    }
+    .user-items{
+        padding: 0%!important;
+    }
+    .gray-blue-btn{
+        width: 100%!important;
+        margin: 0rem 1rem;
+    }
+
+    .email-type::before{
+        content: "user's email";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+    .name-box::before{
+        content: "user's name";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    .users-type::before{
+        content: "user's type";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    .user-input-box::before{
+        content: "user's id";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    .user-input-box .hide{
+        margin-top: 1.7rem!important;
+    }
+    .w3-input{
+        border: 1px solid lightgrey!important;
+    }
+    
+    #user-t{
+        width: 100%!important;
+    }
+    .w3-border-bottom{
+        border: none!important;
+    }
+
+    /* ######### rules file styling ############ */
+    .container{
+        width: 100%;
+    }
+    .white-bg{
+        height: fit-content;
+    }
+
+    .btn-boxes .rule-btn{
+        width: 32%;
+        padding: auto 0em!important;
+        margin: 0% 0.3rem;
+    }
+    .rule-btn .w3-button{
+        padding: 0em 0.3em!important;
+    }
+
+    .visibility-container .check-boxes{
+        padding: 0.5em 0em;
+    }
+    .check-boxes .check{
+        width: 32%;
+        height: auto;
+        margin: 0.5rem auto;
+        padding: 0em;
+    }
+
+    .F-control{
+        justify-content: space-between;
+        padding: 0% !important;
+    }
+
+    .F-control .rule-btn{
+        padding: 0em;
+        width: 40%;
+    }
+
+    .row-box .check-boxes{
+        padding: 0%;
+    }
+    .row-box .check{
+        flex: 0 0 48%;
+        font-size: 1.5rem;
+    }
+
+
+    /* ####### client-page styling ############ */
+    .client-details{
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+    }
+
+    .client-box{
+        width: 100%!important;
+        margin: 1rem auto;
+    }
+
+    .logo-content{
+        width: 90%!important;        
+    }
+    .client-details .user-list-box::before{
+        display: none;
+    }
+
+    .user-list-box .gray-blue-btn{
+        width: 60%!important;
+    }
+
+    .u-list .user-name-container,
+    .u-list .user-email-container{
+        width: 50%!important;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+    .badge,
+    .hide-small{
+        display: none;
+    }
+    .section-box{
+        /* border: 1px solid green; */
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .box{
+        width: 80%!important;
+        height: fit-content!important;
+        margin: 2rem auto!important;
+    }
+    .box img{
+        width: 50%!important;
+    }
+
+
+
+    /* ######## under-system-admin ########### */
+    .container-icon-box{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+    .container-icon-box .size1{
+        width: 100%!important;
+        height: fit-content;
+        margin: auto!important;
+    }
+    .icon-boxes{
+        flex-direction: column;
+    }
+    .icon-boxes .box{
+        width: 70%!important;
+        display: block!important;
+        margin: 2rem auto!important;
+        float: none!important;
+        padding: 1em 0em;
+    }
+    .size1 h2{
+        font-size: 2.9rem;
+        margin-left: 2rem;
+    }
+
+
+    /* ###### user-content ######### */
+    .content-box{
+        display: flex;
+        margin: 3rem 0rem 0rem 0rem!important;
+        width: 100%!important;
+    }
+
+    .back-btn .back-btn{
+        margin-top: 0%!important;
+    }
+    .content-box .client-header{
+        width: 50%!important;
+        margin: 0%;
+        text-align: left!important;
+    }
+
+    .user-info{
+        width: 95%!important;
+        height: fit-content!important;
+    }
+    .user-info h3{
+        font-size: 2.5rem;
+    }
+
+    .user-input-box .hide{
+        margin: 0.5rem 0rem!important;
+        width: 6rem;
+        text-align: center;
+    }
+    .user-id-box .hide{
+        width: 10%;
+        margin: 1.5rem 0rem 0rem 0rem!important;
+        text-align: center;
+    }
+
+    .check-boxes .w3-col{
+        float: none!important;
+    }
+    .check-boxes .check-box{
+        margin-top: 1rem!important;
+    }
+    /* ######## no longer styling ########## */
+    .no-longer-container{
+        margin: 5rem auto 0rem auto;
+        width: 90%;
+        height: fit-content;
+    }
+    .no-longr-box{
+        width: 100%;
+        height: fit-content;
+        margin: 2rem auto;
+    }
+    .no-longr-box img{
+        width: 169px;
+        height: 169px;
+    }
+
+    /* ######## users-styling ############ */
+    .full-hight{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+    .full-hight .sear6-box{
+        width: 45%!important;
+        margin: 1rem;
+        padding: 0%!important;
+    }
+    .user-items{
+        padding: 0%!important;
+    }
+    .gray-blue-btn{
+        width: 100%!important;
+        margin: 0rem 1rem;
+    }
+    
+    .email-type::before{
+        content: "user's email";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+    .name-box::before{
+        content: "user's name";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    .users-type::before{
+        content: "user's type";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+    .user-input-box .hide{
+        margin-top: 1.7rem!important;
+    }
+
+    .user-input-box::before{
+        content: "user's id";
+        display: block;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    .w3-input{
+        border: 1px solid lightgrey!important;
+    }
+    
+    #user-t{
+        width: 100%!important;
+    }
+    .w3-border-bottom{
+        border: none!important;
+    }
+
+    /* ######### rules file styling ############ */
+    .container{
+        width: 100%;
+    }
+    .white-bg{
+        height: fit-content;
+        padding: 0em 0.5em!important;
+    }
+
+    .btn-boxes{
+        padding: 0%!important;
+    }
+    .btn-boxes .rule-btn{
+        width: 31%;
+        padding: auto 0em!important;
+        margin: 0% 0.3rem;
+    }
+    .rule-btn .w3-button{
+        padding: 0em 0.3em!important;
+    }
+
+    .check-boxes{
+        padding: 0.5em 0em;
+    }
+    .check-boxes .check{
+        width: 32%;
+        height: auto;
+        margin: 0.5rem auto;
+        padding: 0em;
+    }
+
+    .F-control{
+        justify-content: space-between;
+        padding: 0% !important;
+    }
+
+    .F-control .rule-btn{
+        padding: 0em;
+        width: 40%;
+    }
+
+    .row-box .check-boxes{
+        padding: 0%;
+    }
+    .row-box .check{
+        flex: 0 0 48%;
+    }
+
+    /* ####### client-page styling ############ */
+    .client-details{
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+    }
+
+    .client-box{
+        width: 100%!important;
+        margin: 1rem auto;
+    }
+
+    .logo-content{
+        width: 90%!important;        
+    }
+    .client-details .user-list-box::before{
+        display: none;
+    }
+
+    .user-list-box .gray-blue-btn{
+        width: 60%!important;
+    }
+
+    .u-list .user-name-container,
+    .u-list .user-email-container{
+        width: 50%!important;
+    }
+}
+
+@media  (min-width: 601px) and (max-width: 991px) {
+    .section-box{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .box{
+        width: 45%!important;
+        height: fit-content!important;
+        margin: 2rem auto!important;
+    }
+
+
+
+    /* ######## under-system-admin ########### */
+    .container-icon-box{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+    .container-icon-box .size1{
+        width: 100%!important;
+        height: fit-content;
+        margin: auto!important;
+    }
+
+    .size1 h2{
+        margin-left: 3.5rem;
+    }
+    .icon-boxes{
+        width: 90%;
+        margin: auto;
+        display: flex!important;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 40%!important;
+        display: block!important;
+        margin: 2rem auto!important;
+        float: none!important;
+        padding: 1em 0em;
+    }
+
+
+    /* ########### user-content ######### */
+    .content-box{
+        width: 60%!important;
+        display: flex;
+        margin: 3rem 0rem 0rem 0rem!important;
+    }
+    .back-btn .sm-margin{
+        margin-top: 15%!important;
+    }
+    .content-box .client-header{
+        width: 50%!important;
+        margin: 0rem 0rem 0rem 2rem;
+        text-align: left!important;
+    }
+    .user-info .user-box{
+        height: fit-content!important;
+    }
+    .user-info .user-box .input-box{
+        width: 48%!important;
+    }
+
+
+    /* ######## no longer styling ########## */
+    .no-longer-container{
+        margin: 5rem auto 0rem auto;
+        width: 90%;
+        height: fit-content;
+    }
+    .no-longr-box{
+        width: 100%;
+        height: fit-content;
+        margin: 2rem auto;
+    }
+    .no-longr-box img{
+        width: 169px;
+        height: 169px;
+    }
+
+
+    /* ######## user-styling ############ */
+    .full-hight{
+        width: 100%!important;
+        height: fit-content!important;
+    }
+
+    .full-hight .sear6-box{
+        width: 30%!important;
+        margin: 1rem 0.5rem;
+        padding: 0%!important;
+    }
+
+    .sear6-box input,
+    .sear6-box .input-box,
+    .sear6-box .gray-blue-btn{
+        width: 100%!important;
+    }
+.w3-border-bottom{
+    border: none!important;
+}
+
+/* ######### rules file styling ############ */
+.container{
+    width: 100%;
+}
+.white-bg{
+    height: fit-content;
+    padding: 0em 1em!important;
+}
+
+.btn-boxes .rule-btn{
+    padding: auto 0em!important;
+    margin: 0% 0.3rem;
+    width: 180px;
+}
+.rule-btn .w3-button{
+    padding: 0em 0.3em!important;
+}
+
+.check-boxes{
+    padding: 0.5em 0em;
+}
+.check-boxes .check{
+    width: 32%;
+    height: auto;
+    margin: 0.5rem auto;
+    padding: 0em;
+}
+
+.F-control{
+    padding: 0% !important;
+}
+
+.F-control .rule-btn{
+    padding: 0em;
+}
+
+.row-box .check-boxes{
+    padding: 0%;
+}
+.project-row .check-boxes .check{
+    width: 24%;
+}
+
+
+/* ####### client-page styling ############ */
+.logo-content{
+    display: none;
+}
+.client-details .sear6-box{
+    width: 50%!important;
+}
+.client-box{
+    width: 40%!important;
+}
+.user-list-box{
+    width: 58%!important;
+}
+.user-list-box::before{
+    display: none;
+}
+}
+
+@media  (min-width: 992px) and (max-width: 1250px){
+    
+/* ####### client-page styling ############ */
+.logo-content{
+    display: none;
+}
+.client-details .sear6-box{
+    width: 100%!important;
+}
+.sear6-box .gray-blue-btn{
+    width: 35%!important;
+}
+.client-box{
+    width: 40%!important;
+}
+.user-list-box{
+    width: 58%!important;
+}
+.user-list-box::before{
+    display: none;
+}
+}
+
+
+@media (min-width: 601px) and (max-width: 750px) {
+    /* ####### client-page styling ############ */
+    .client-details{
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+    }
+
+    .client-box{
+        width: 100%!important;
+        margin: 1rem auto;
+    }
+
+    .logo-content{
+        width: 90%!important;        
+    }
+    .client-details .user-list-box::before{
+        display: none;
+    }
+
+    .user-list-box .sear6-box{
+        width: 35%!important;
+    }
+    .user-list-box .gray-blue-btn{
+        width: 60%!important;
+    }
+
+    .u-list .user-name-container,
+    .u-list .user-email-container{
+        width: 50%!important;
+    }
+}
