@@ -1212,6 +1212,14 @@ input:focus{
     .u-list .user-email-container{
         width: 50%!important;
     }
+    
+/*     ##### login-page ######## */
+     .left{
+        margin-top: -0.2rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
@@ -1455,6 +1463,13 @@ input:focus{
     .u-list .user-name-container,
     .u-list .user-email-container{
         width: 50%!important;
+    }
+    
+/*     ####### login-page ########### */
+     .left{
+        margin-top: -0.2rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
     }
 }
 
